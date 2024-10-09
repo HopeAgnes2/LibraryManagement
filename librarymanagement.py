@@ -6,7 +6,7 @@
 
 import time
 import os
-import mysql.connector # type: ignore
+import mysql.connector
 
 def database():
     print("============================================================================")
@@ -137,7 +137,7 @@ def menu() :
             exit_decision = input("Are you sure you want to Exit?(y/n) => ")
             if exit_decision == "y" :
                 os.system("cls")
-                database()
+                databases()
             else :
                 os.system("cls")
                 menu()
